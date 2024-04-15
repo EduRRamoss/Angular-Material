@@ -10,3 +10,13 @@
     width: 100%;
     text-align: center;
 }
+
+.lista{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
