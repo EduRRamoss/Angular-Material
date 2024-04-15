@@ -10,11 +10,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ListaComponent } from './components/lista/lista.component';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComboboxSelectComponent
+    ComboboxSelectComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
+    MatListModule,
   ],
   providers: [
     provideAnimationsAsync()
