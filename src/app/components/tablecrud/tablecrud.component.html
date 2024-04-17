@@ -1,0 +1,16 @@
+<div class="container" style="border: 1px solid black;">
+
+    <mat-form-field style="width: 100%;">
+        <mat-label>Filtro</mat-label>
+        <input matInput (keyup)="aplicarFiltro($event)" placeholder="Ex. Hidrogenio" #input>
+    </mat-form-field>
+
+    <table class="mat-elevation-z8 exemplo-table">
+        <ng-container matColumnDef="posicao">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let elemento" [class.bold]="elemento.peso > 8" [class.]></td>
+        </ng-container>
+
+    </table>
+
+</div>

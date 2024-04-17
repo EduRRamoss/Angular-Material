@@ -13,12 +13,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListaComponent } from './components/lista/lista.component';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule} from '@angular/material/button';
+import { TableComponent } from './components/table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { TablecrudComponent } from './components/tablecrud/tablecrud.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComboboxSelectComponent,
-    ListaComponent
+    ListaComponent,
+    TableComponent,
+    TablecrudComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,9 @@ import { MatButtonModule} from '@angular/material/button';
     FormsModule,
     ReactiveFormsModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [
     provideAnimationsAsync()
